@@ -24,10 +24,10 @@
 				<el-menu background-color="#333744" text-color="#fff" active-text-color="#409eff" :default-openeds="defaultOpeneds"
 				         :unique-opened="false" :collapse="isCollapse" :collapse-transition="false"
 				         :router="true" :default-active="$store.state.activePath">
-<!--					<el-menu-item index="/dashboard">-->
-<!--						<i class="iconfont ali-iconfont icon-dashboard"></i>-->
-<!--						<span>仪表盘</span>-->
-<!--					</el-menu-item>-->
+					<el-menu-item index="/dashboard">
+						<i class="iconfont ali-iconfont icon-dashboard"></i>
+						<span>仪表盘</span>
+					</el-menu-item>
 					<!-- 一级菜单 -->
 					<el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
 						<!-- 一级菜单的模板区域 -->

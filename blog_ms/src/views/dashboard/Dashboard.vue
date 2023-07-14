@@ -1,29 +1,29 @@
 <template>
 	<div>
 		<el-row class="panel-group" :gutter="50">
-			<el-col :span="6">
-				<el-card class="card-panel" body-style="padding: 0">
-					<div class="card-panel-icon-wrapper">
-						<SvgIcon icon-class="#icon-pv" class-name="card-panel-icon"/>
-					</div>
-					<div class="card-panel-description">
-						<div class="card-panel-text">今日PV</div>
-						<span class="card-panel-num">{{ pv }}</span>
-					</div>
-				</el-card>
-			</el-col>
+<!--			<el-col :span="6">-->
+<!--				<el-card class="card-panel" body-style="padding: 0">-->
+<!--					<div class="card-panel-icon-wrapper">-->
+<!--						<SvgIcon icon-class="#icon-pv" class-name="card-panel-icon"/>-->
+<!--					</div>-->
+<!--					<div class="card-panel-description">-->
+<!--						<div class="card-panel-text">今日PV</div>-->
+<!--						<span class="card-panel-num">{{ pv }}</span>-->
+<!--					</div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 
-			<el-col :span="6">
-				<el-card class="card-panel" body-style="padding: 0">
-					<div class="card-panel-icon-wrapper">
-						<SvgIcon icon-class="#icon-yonghu" class-name="card-panel-icon"/>
-					</div>
-					<div class="card-panel-description">
-						<div class="card-panel-text">今日UV</div>
-						<span class="card-panel-num">{{ uv }}</span>
-					</div>
-				</el-card>
-			</el-col>
+<!--			<el-col :span="6">-->
+<!--				<el-card class="card-panel" body-style="padding: 0">-->
+<!--					<div class="card-panel-icon-wrapper">-->
+<!--						<SvgIcon icon-class="#icon-yonghu" class-name="card-panel-icon"/>-->
+<!--					</div>-->
+<!--					<div class="card-panel-description">-->
+<!--						<div class="card-panel-text">今日UV</div>-->
+<!--						<span class="card-panel-num">{{ uv }}</span>-->
+<!--					</div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 
 			<el-col :span="6">
 				<el-card class="card-panel" body-style="padding: 0">
@@ -37,17 +37,18 @@
 				</el-card>
 			</el-col>
 
-			<el-col :span="6">
-				<el-card class="card-panel" body-style="padding: 0">
-					<div class="card-panel-icon-wrapper">
-						<SvgIcon icon-class="#icon-pinglun-blue" class-name="card-panel-icon"/>
-					</div>
-					<div class="card-panel-description">
-						<div class="card-panel-text">评论数</div>
-						<span class="card-panel-num">{{ commentCount }}</span>
-					</div>
-				</el-card>
-			</el-col>
+<!--      评论数-->
+<!--			<el-col :span="6">-->
+<!--				<el-card class="card-panel" body-style="padding: 0">-->
+<!--					<div class="card-panel-icon-wrapper">-->
+<!--						<SvgIcon icon-class="#icon-pinglun-blue" class-name="card-panel-icon"/>-->
+<!--					</div>-->
+<!--					<div class="card-panel-description">-->
+<!--						<div class="card-panel-text">评论数</div>-->
+<!--						<span class="card-panel-num">{{ commentCount }}</span>-->
+<!--					</div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 		</el-row>
 
 		<el-row class="panel-group" :gutter="20">
@@ -61,16 +62,16 @@
 					<div ref="tagEcharts" style="height:500px;"></div>
 				</el-card>
 			</el-col>
-			<el-col :span="8">
-				<el-card>
-					<div ref="mapEcharts" style="height:500px;"></div>
-				</el-card>
-			</el-col>
+<!--			<el-col :span="8">-->
+<!--				<el-card>-->
+<!--					<div ref="mapEcharts" style="height:500px;"></div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 		</el-row>
 
-		<el-card class="panel-group">
-			<div ref="visitRecordEcharts" style="height:500px;"></div>
-		</el-card>
+<!--		<el-card class="panel-group">-->
+<!--			<div ref="visitRecordEcharts" style="height:500px;"></div>-->
+<!--		</el-card>-->
 	</div>
 </template>
 
