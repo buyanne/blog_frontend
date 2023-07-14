@@ -2,9 +2,9 @@
 	<el-container class="home-container">
 		<!--头部-->
 		<el-header>
-			<div class="title" @click="$route.path!='/dashboard' && $router.push({path:'/dashboard'})" >
+			<div class="title" @click="$route.path!='/' && $router.push({path:'/'})" >
 				<img src="~assets/img/logo.png" alt="" height="40">
-				<span>BLOG · MANAGEMENT</span>
+				<span>BLOG · MS</span>
 			</div>
 			<el-dropdown trigger="click" class="user" v-if="user" @command="logout">
 				<div class="el-dropdown-link">
@@ -24,10 +24,10 @@
 				<el-menu background-color="#333744" text-color="#fff" active-text-color="#409eff" :default-openeds="defaultOpeneds"
 				         :unique-opened="false" :collapse="isCollapse" :collapse-transition="false"
 				         :router="true" :default-active="$store.state.activePath">
-					<el-menu-item index="/dashboard">
-						<i class="iconfont ali-iconfont icon-dashboard"></i>
-						<span>仪表盘</span>
-					</el-menu-item>
+<!--					<el-menu-item index="/dashboard">-->
+<!--						<i class="iconfont ali-iconfont icon-dashboard"></i>-->
+<!--						<span>仪表盘</span>-->
+<!--					</el-menu-item>-->
 					<!-- 一级菜单 -->
 					<el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
 						<!-- 一级菜单的模板区域 -->
@@ -69,21 +69,21 @@
 								title: '写文章',
 								path: '/blogs/write'
 							},
-							{
-								id: 12,
-								title: '写动态',
-								path: '/moments/write'
-							},
+							// {
+							// 	id: 12,
+							// 	title: '写动态',
+							// 	path: '/moments/write'
+							// },
 							{
 								id: 13,
 								title: '文章管理',
 								path: '/blogs'
 							},
-							{
-								id: 14,
-								title: '动态管理',
-								path: '/moments'
-							},
+							// {
+							// 	id: 14,
+							// 	title: '动态管理',
+							// 	path: '/moments'
+							// },
 							{
 								id: 15,
 								title: '分类管理',
@@ -94,11 +94,11 @@
 								title: '标签管理',
 								path: '/tags'
 							},
-							{
-								id: 17,
-								title: '评论管理',
-								path: '/comments'
-							}
+							// {
+							// 	id: 17,
+							// 	title: '评论管理',
+							// 	path: '/comments'
+							// }
 						]
 					},
 					{
@@ -110,11 +110,11 @@
 								title: '站点设置',
 								path: '/siteSettings'
 							},
-							{
-								id: 22,
-								title: '友链管理',
-								path: '/friends'
-							},
+							// {
+							// 	id: 22,
+							// 	title: '友链管理',
+							// 	path: '/friends'
+							// },
 							{
 								id: 23,
 								title: '关于我',
@@ -122,64 +122,64 @@
 							}
 						]
 					},
-					{
-						id: 3,
-						title: '系统管理',
-						children: [
-							{
-								id: 31,
-								title: '定时任务',
-								path: '/jobs'
-							},
-						]
-					},
-					{
-						id: 4,
-						title: '日志管理',
-						children: [
-							{
-								id: 41,
-								title: '任务日志',
-								path: '/jobs/logs'
-							},
-							{
-								id: 42,
-								title: '登录日志',
-								path: '/loginLog'
-							},
-							{
-								id: 43,
-								title: '操作日志',
-								path: '/operationLog'
-							},
-							{
-								id: 44,
-								title: '异常日志',
-								path: '/exceptionLog'
-							},
-							{
-								id: 45,
-								title: '访问日志',
-								path: '/visitLog'
-							}
-						]
-					},
-					{
-						id: 5,
-						title: '数据统计',
-						children: [
-							{
-								id: 51,
-								title: '访客统计',
-								path: '/visitor'
-							},
-							{
-								id: 52,
-								title: '受访页面',
-								path: '/visitPage'
-							}
-						]
-					},
+					// {
+					// 	id: 3,
+					// 	title: '系统管理',
+					// 	children: [
+					// 		{
+					// 			id: 31,
+					// 			title: '定时任务',
+					// 			path: '/jobs'
+					// 		},
+					// 	]
+					// },
+					// {
+					// 	id: 4,
+					// 	title: '日志管理',
+					// 	children: [
+					// 		{
+					// 			id: 41,
+					// 			title: '任务日志',
+					// 			path: '/jobs/logs'
+					// 		},
+					// 		{
+					// 			id: 42,
+					// 			title: '登录日志',
+					// 			path: '/loginLog'
+					// 		},
+					// 		{
+					// 			id: 43,
+					// 			title: '操作日志',
+					// 			path: '/operationLog'
+					// 		},
+					// 		{
+					// 			id: 44,
+					// 			title: '异常日志',
+					// 			path: '/exceptionLog'
+					// 		},
+					// 		{
+					// 			id: 45,
+					// 			title: '访问日志',
+					// 			path: '/visitLog'
+					// 		}
+					// 	]
+					// },
+					// {
+					// 	id: 5,
+					// 	title: '数据统计',
+					// 	children: [
+					// 		{
+					// 			id: 51,
+					// 			title: '访客统计',
+					// 			path: '/visitor'
+					// 		},
+					// 		{
+					// 			id: 52,
+					// 			title: '受访页面',
+					// 			path: '/visitPage'
+					// 		}
+					// 	]
+					// },
 				],
 				iconsObj: {
 					'1': 'el-icon-menu',

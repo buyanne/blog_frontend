@@ -9,8 +9,8 @@
         <div class="ui grid m-margin-lr">
 
           <!--背景图片-->
-          <span>{{ item.firstPicture }}</span>
-<!--          <span><img src=""></span>-->
+          <span><img :src="item.firstPicture" alt=""></span>
+
 
           <!--标题-->
           <div class="row m-padded-tb-small">
