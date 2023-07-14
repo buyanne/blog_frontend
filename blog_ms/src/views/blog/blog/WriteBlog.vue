@@ -131,7 +131,7 @@
 					title: [{required: true, message: '请输入标题', trigger: 'change'}],
 					//firstPicture: [{required: true, message: '请输入首图链接', trigger: 'change'}],
 					cate: [{required: true, message: '请选择分类', trigger: 'change'}],
-					// tagList: [{required: true, message: '请选择标签', trigger: 'change'}],
+					tagList: [{required: true, message: '请选择标签', trigger: 'change'}],
 				},
 			}
 		},
