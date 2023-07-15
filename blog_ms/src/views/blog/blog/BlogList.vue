@@ -66,23 +66,23 @@
 					<el-radio-group v-model="radio">
 						<el-radio :label="1">公开</el-radio>
 						<el-radio :label="2">私密</el-radio>
-						<el-radio :label="3">密码保护</el-radio>
+<!--						<el-radio :label="3">密码保护</el-radio>-->
 					</el-radio-group>
 				</el-form-item>
-				<el-form-item label="密码" v-if="radio===3">
-					<el-input v-model="visForm.password"></el-input>
-				</el-form-item>
+<!--				<el-form-item label="密码" v-if="radio===3">-->
+<!--					<el-input v-model="visForm.password"></el-input>-->
+<!--				</el-form-item>-->
 				<el-form-item v-if="radio!==2">
 					<el-row>
-						<el-col :span="6">
-							<el-switch v-model="visForm.appreciation" active-text="赞赏"></el-switch>
-						</el-col>
+<!--						<el-col :span="6">-->
+<!--							<el-switch v-model="visForm.appreciation" active-text="赞赏"></el-switch>-->
+<!--						</el-col>-->
 						<el-col :span="6">
 							<el-switch v-model="visForm.recommend" active-text="推荐"></el-switch>
 						</el-col>
-						<el-col :span="6">
-							<el-switch v-model="visForm.commentEnabled" active-text="评论"></el-switch>
-						</el-col>
+<!--						<el-col :span="6">-->
+<!--							<el-switch v-model="visForm.commentEnabled" active-text="评论"></el-switch>-->
+<!--						</el-col>-->
 						<el-col :span="6">
 							<el-switch v-model="visForm.top" active-text="置顶"></el-switch>
 						</el-col>
