@@ -25,17 +25,17 @@
 <!--				</el-card>-->
 <!--			</el-col>-->
 
-			<el-col :span="6">
-				<el-card class="card-panel" body-style="padding: 0">
-					<div class="card-panel-icon-wrapper">
-						<SvgIcon icon-class="#icon-article" class-name="card-panel-icon"/>
-					</div>
-					<div class="card-panel-description">
-						<div class="card-panel-text">文章数</div>
-						<span class="card-panel-num">{{ blogCount }}</span>
-					</div>
-				</el-card>
-			</el-col>
+<!--			<el-col :span="6">-->
+<!--				<el-card class="card-panel" body-style="padding: 0">-->
+<!--					<div class="card-panel-icon-wrapper">-->
+<!--						<SvgIcon icon-class="#icon-article" class-name="card-panel-icon"/>-->
+<!--					</div>-->
+<!--					<div class="card-panel-description">-->
+<!--						<div class="card-panel-text">文章数</div>-->
+<!--						<span class="card-panel-num">{{ blogCount }}</span>-->
+<!--					</div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 
 <!--      评论数-->
 <!--			<el-col :span="6">-->
@@ -51,17 +51,17 @@
 <!--			</el-col>-->
 		</el-row>
 
-		<el-row class="panel-group" :gutter="20">
-			<el-col :span="8">
-				<el-card>
-					<div ref="categoryEcharts" style="height:500px;"></div>
-				</el-card>
-			</el-col>
-			<el-col :span="8">
-				<el-card>
-					<div ref="tagEcharts" style="height:500px;"></div>
-				</el-card>
-			</el-col>
+<!--		<el-row class="panel-group" :gutter="20">-->
+<!--			<el-col :span="8">-->
+<!--				<el-card>-->
+<!--					<div ref="categoryEcharts" style="height:500px;"></div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
+<!--			<el-col :span="8">-->
+<!--				<el-card>-->
+<!--					<div ref="tagEcharts" style="height:500px;"></div>-->
+<!--				</el-card>-->
+<!--			</el-col>-->
 <!--			<el-col :span="8">-->
 <!--				<el-card>-->
 <!--					<div ref="mapEcharts" style="height:500px;"></div>-->
