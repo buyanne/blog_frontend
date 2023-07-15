@@ -3,7 +3,7 @@
 		<div class="login_box">
 			<!--头像-->
 			<div class="avatar_box">
-				<img src="/img/avatar.jpg" alt="">
+				<img src="/img/comment-avatar/3.jpg" alt="">
 			</div>
 			<!--登录表单-->
 			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="login_form">
@@ -72,7 +72,9 @@
 	.login_container {
 		box-sizing: unset !important;
 		height: 100%;
-		background-color: #2b4b6b;
+		background-image: url("https://cdn.jsdelivr.net/gh/buyanne/JsDelivr@3.7/BlogImage/47.jpg");
+    background-size: 2048px 1268px;
+    background-position-x: -0;
 	}
 
 	.login_box {
