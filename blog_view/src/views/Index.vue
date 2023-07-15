@@ -7,7 +7,9 @@
 			<Header v-if="$route.name==='home'" :blogName="siteInfo.blogName" />
 		</div>
 
+
 		<div class="main">
+
 			<div class="m-padded-tb-big">
 				<div class="ui container">
 					<div class="ui stackable grid">
@@ -134,6 +136,7 @@
 		display: flex;
 		min-height: 100vh; /* 没有元素时，也把页面撑开至100% */
 		flex-direction: column;
+    background-image: url("https://cdn.jsdelivr.net/gh/buyanne/JsDelivr/BlogImage/41.jpg");
 	}
 
 	.main {
@@ -162,4 +165,37 @@
 	.m-display-none {
 		display: none !important;
 	}
+
+  .view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transform: translatex(calc(var(--percentage) * 100px));
+  }
+
+  .view div {
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 110%;
+    height: 100%;
+  }
+
+  .view .bg1 {
+    z-index: 10;
+    opacity: calc(1 - (var(--percentage) - 0.5) / 0.5);
+  }
+
+  .view .bg2 {
+    z-index: 20;
+    opacity: calc(1 - (var(--percentage) - 0.25) / 0.25);
+  }
+
+  .view .bg3 {
+    left: -10%;
+  }
 </style>

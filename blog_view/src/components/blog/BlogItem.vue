@@ -27,9 +27,9 @@
               <div class="item m-views">
                 <i class="el-icon-s-data"></i><span>{{ item.views }}</span>
               </div>
-              <div class="item m-common-gray">
-                <i class="el-icon-s-comment"></i><span>123</span>
-              </div>
+<!--              <div class="item m-common-gray">-->
+<!--                <i class="el-icon-s-comment"></i><span>{{ item.c }}</span>-->
+<!--              </div>-->
             </div>
           </div>
           <!--分类-->

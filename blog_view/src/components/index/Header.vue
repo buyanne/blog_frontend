@@ -1,11 +1,8 @@
 <template>
 	<header ref="header">
 		<div class="view">
-			<!-- <img ref="imgbg1" src="https://cdn.jsdelivr.net/gh/Naccl/blog-resource/img/bg1.jpg" style="display: none;"> -->
-			<div style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-04.png');"></div>
-			<!-- <div class="bg2" style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-02.jpg');"></div> -->
-			<!-- <div class="bg3" style="background-image: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/bg-03.jpg');" v-show="loaded"></div> -->
-		</div>
+			<div style="background-image: url('https://cdn.jsdelivr.net/gh/buyanne/JsDelivr/BlogImage/42.jpg');"></div>
+    </div>
 		<div class="text-malfunction">{{blogName}}<span class="caret"></span>
 		</div>
 		<div class="wrapper">
@@ -205,13 +202,13 @@
 	}
 
 	.wave1 {
-		background: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/wave1.png') repeat-x;
+		background: url('https://cdn.jsdelivr.net/gh/buyanne/JsDelivr/bg/wave1.png') repeat-x;
 		height: 75px;
 		width: 100%;
 	}
 
 	.wave2 {
-		background: url('https://cdn.jsdelivr.net/gh/yoyling/JsDelivr/bg/wave2.png') repeat-x;
+		background: url('https://cdn.jsdelivr.net/gh/buyanne/JsDelivr/bg/wave2.png') repeat-x;
 		height: 90px;
 		width: calc(100% + 100px);
 		left: -100px;

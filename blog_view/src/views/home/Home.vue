@@ -1,6 +1,8 @@
 <template>
 	<div>
+
 		<BlogList :getBlogList="getBlogList" :blogList="blogList" :totalPage="totalPage"/>
+
 	</div>
 </template>
 
