@@ -6,7 +6,7 @@
 				<img src="/img/comment-avatar/3.jpg" alt="">
 			</div>
 			<!--登录表单-->
-			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="login_form">
+			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="register_form">
 				<el-form-item prop="username">
 					<el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
 				</el-form-item>
@@ -15,6 +15,7 @@
 				</el-form-item>
 				<el-form-item class="btns">
 					<el-button type="primary" @click="login">登录</el-button>
+          <el-button type="primary" @click="goRegister">注册</el-button>
 					<el-button type="info" @click="resetLoginForm">重置</el-button>
 				</el-form-item>
 			</el-form>
@@ -63,7 +64,10 @@
 						})
 					}
 				})
-			}
+			},
+      goRegister(){
+        this.$router.push('/register')
+      }
 		}
 	}
 </script>
@@ -108,7 +112,7 @@
 		background-color: #eee;
 	}
 
-	.login_form {
+	.register_form {
 		position: absolute;
 		bottom: 0;
 		width: 100%;

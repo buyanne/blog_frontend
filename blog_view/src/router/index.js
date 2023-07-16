@@ -11,6 +11,7 @@ import Moments from "@/views/moments/Moments";
 import Friends from "@/views/friends/Friends";
 import About from "@/views/about/About";
 import Login from "@/views/Login";
+import Register from "@/views/register.vue";
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,13 @@ const routes = [
 		component: Login,
 		meta: {
 			title: '登录'
+		}
+	},
+	{
+		path: "/register",
+		component: Register,
+		meta: {
+			title: "注册"
 		}
 	},
 	{
@@ -35,6 +43,7 @@ const routes = [
 					title: '首页'
 				}
 			},
+
 			{
 				path: '/archives',
 				name: 'archives',

@@ -216,6 +216,7 @@
 		methods: {
 			getUserInfo() {
 				this.user = JSON.parse(window.localStorage.getItem('user') || null)
+        // console.log(this.user.avatar)
 				if (!this.user) {
 					this.$router.push('/login')
 				}

@@ -3,10 +3,10 @@
 		<div class="login_box">
 			<!--头像-->
 			<div class="avatar_box">
-				<img src="/img/avatar.jpg" alt="">
+				<img src="/img/comment-avatar/3.jpg" alt="">
 			</div>
 			<!--登录表单-->
-			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="login_form">
+			<el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" class="register_form">
 				<el-form-item prop="username">
 					<el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
 				</el-form-item>
@@ -106,7 +106,7 @@
 		background-color: #eee;
 	}
 
-	.login_form {
+	.register_form {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
